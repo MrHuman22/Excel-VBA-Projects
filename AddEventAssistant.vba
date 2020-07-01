@@ -1,4 +1,6 @@
-Sub AddEA(ByVal Target As Range)
+'Uses the event handler Worksheet_Change
+'For this reason, store this as a worksheet-specific sub
+Sub Worksheet_Change(ByVal Target As Range)
 'Code adapted from Sumit Bansal from https://trumpexcel.com
 'Allows multiple selections from data validation list. Repeat selection removes value from list.
 'In this instance, the selections are always made from column 19.
