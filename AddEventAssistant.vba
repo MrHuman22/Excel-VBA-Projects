@@ -9,6 +9,7 @@ Dim previousPeople() As String
 Set dict = CreateObject("Scripting.Dictionary")
 
 Application.EnableEvents = True
+On Error GoTo Exitsub
 If Target.Column = 19 Then
     If Target.SpecialCells(xlCellTypeAllValidation) Is Nothing Then
     GoTo Exitsub
